@@ -94,7 +94,7 @@ npm run local-coverage
 
 ## Node Version and Standards
 Ensuring that a standardized version of NodeJS is being used across projects is important for consistency of
-environment. More information on configuring the Node environment can be found in the [NodeJS Standards](https://github.com/DealersLinkDevTeam/node-base-project/wiki/NodeJS-Standards) documentation.
+environment. More information on configuring the Node environment can be found in the [NodeJS Standards](https://github.com/sr-jayreardon/node-base-project/wiki/NodeJS-Standards) documentation.
 
 ## Code Standards / ES6 Linting / Code Cleanup
 
@@ -107,4 +107,4 @@ Code is not automatically formatted with git hooks using either the `eslint --fi
 are left to the option of the developer to use as they are necessary, since it may be desirable to fix certain code
 linting/standards issues by hand.
 
-Please see the Wiki for more information regarding [Code Standards](https://github.com/DealersLinkDevTeam/node-base-project/wiki/Code-Standards).
+Please see the Wiki for more information regarding [Code Standards](https://github.com/sr-jayreardon/node-base-project/wiki/Code-Standards).

@@ -99,7 +99,7 @@ environment. More information on configuring the Node environment can be found i
 ## Code Standards / ES6 Linting / Code Cleanup
 
 These projects use two tools, `eslint` and `prettier` to assist in conforming code to proper standards. The
-files `.eslinkrc.json` and `.prettierrc.json` come pre-configured to assist with ensuring code standards. The `prettier`
+files `.eslintrc.json` and `.prettierrc.json` come pre-configured to assist with ensuring code standards. The `prettier`
 rule set is a more restrictive subset of the `eslint` ruleset; therefore, any code formatted by `prettier` will always
 pass the linting done by `eslint`.  
 

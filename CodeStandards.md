@@ -21,8 +21,7 @@
 
 <a name="standards"></a>
 # Code Standards and Style Guide Overview
-The following is an outline of the basic code standards as recommended by the ES6 Style Guide and supplemented by the
-AirBnB style guide in places where the ES6 style guide only makes recommendations for the purposes of consistent code.
+The following is an outline of the basic code standards as recommended by the ES6 Style Guide and supplemented by the AirBnB style guide in places where the ES6 style guide only makes recommendations for the purposes of consistent code.
 
 In general, this code style guide exists to ensure the following:
   * Consistent style code regardless of the author
@@ -30,19 +29,14 @@ In general, this code style guide exists to ensure the following:
   * Enforcement of coding best practices for code structure and performance
   * Ease of acquiring and on-boarding new talent
 
-The ES6 Style Guide and AirBnB Style Guides are used to ensure that code conforms to the leading industry standards
-which are used by the majority of Node developers within the Software industry.  These style and structure guidelines
-are supported through the automated tooling of ESLint which has the ability to correct many of the issues outlined in
-this guide.  Please see the [ESLint Rules](https://github.com/DealersLinkDevTeam/node-base-project/wiki/ESLint-Rules)
+The ES6 Style Guide and AirBnB Style Guides are used to ensure that code conforms to the leading industry standards which are used by the majority of Node developers within the Software industry.  These style and structure guidelines are supported through the automated tooling of ESLint which has the ability to correct many of the issues outlined in this guide.  Please see the [ESLint Rules](https://github.com/sr-jayreardon/node-base-project/wiki/ESLint-Rules)
 for additional details.
 
-Consideration should be given for [language support](https://node.green/) in NodeJS, Browsers, and the environment where
-the code will run. For information on setting up your environment to run the appropriate version of NodeJS please
-see the [NodeJS Standards Guide](https://github.com/DealersLinkDevTeam/node-base-project/wiki/NodeJS-Standards)
-  * Most Node projects should run on NodeJS 9.X
-  * AWS Lambda only supports NodeJS 6.2 and should be used
+Consideration should be given for [language support](https://node.green/) for any environment that the code will run (e.g. NodeJS, Browsers, etc.). For information on setting up your environment to run the appropriate version of NodeJS please see the [NodeJS Standards Guide](https://github.com/sr-jayreardon/node-base-project/wiki/NodeJS-Standards)
+  * Most Node projects should run on NodeJS 10.X or NodeJS 8.X
+  * AWS Lambda only supports NodeJS 8.2 and should be used
+  * GCP AppEngine supports
   * Most modern browsers support ES2015; however transpilation using Babel is recommended for backward compatibility with older browsers.
-  * NodeJS 10.x contains breaking changes and should not be used at this time.
 
   ***IMPORTANT NOTE:*** **When developing React or other client-side code, you must flip the line at the beginning of `.eslintrc.json` from `"browser": false,` to `"browser": true,`.**
 
@@ -51,11 +45,9 @@ see the [NodeJS Standards Guide](https://github.com/DealersLinkDevTeam/node-base
 
 <a name="functional"></a>
 ## Functional Programming
-Effort should be made to make use of JavaScripts (ES6) [Functional Programming Methodologies](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
-and high-level functions.
+Effort should be made to make use of JavaScripts (ES6) [Functional Programming Methodologies](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) and high-level functions.
 
-For example, use of `filter`, `map`, and `reduce` can greatly simplify code by removing cumbersome `for` loops to
-iterate through arrays and objects.
+For example, use of `filter`, `map`, and `reduce` can greatly simplify code by removing cumbersome `for` loops to iterate through arrays and objects.
 
 Take for example the following code using control structures:
 ```js
@@ -86,15 +78,9 @@ let totalAge = animals.reduce((sum, animal) => { return sum + animal.age; }, 0);
 
 <a name="promises"></a>
 ## Promises, Promise Chaining, and Callback functions
-Effort should be made to use Promises and Promise chaining when possible instead of callbacks.  Further, when dealing
-with modules(libraries) which require connectivity of some form, but do not provide Promises, then the
-[Bluebird](https://www.npmjs.com/package/bluebird) `.promisify()` functionality should be used to create Promisified
-versions of such functions.  Built-in CommonJS(Node) libraries which are structured to use callbacks (e.g. `fs`), can
-make use of the [`util.promisify()`](https://nodejs.org/api/util.html#util_util_promisify_original) functionality added
-in NodeJS 8.0.0
+Effort should be made to use Promises and Promise chaining when possible instead of callbacks.  Further, when dealing with modules(libraries) which require connectivity of some form, but do not provide Promises, then the [Bluebird](https://www.npmjs.com/package/bluebird) `.promisify()` functionality should be used to create Promisified versions of such functions.  Built-in CommonJS(Node) libraries which are structured to use callbacks (e.g. `fs`), can make use of the [`util.promisify()`](https://nodejs.org/api/util.html#util_util_promisify_original) functionality added in NodeJS 8.0.0
 
-Regarding Promises and Promise Chains, they should be strung together to avoid 'stacked' promises. Take for example,
-the following Promise code:
+Regarding Promises and Promise Chains, they should be strung together to avoid 'stacked' promises. Take for example, the following Promise code:
 
 ```js
 const redis = require('redis');
@@ -141,9 +127,7 @@ Take note how the latter code is shorter (284 vs 249 chars) and does not extend 
 
 <a name="importrequire"></a>
 ## ES6 `import` vs. `require`
-Effort should be made to use `import` and `require` in the appropriate circumstances to assist in the reduction of
-unneeded code.  For NodeJS, familiarity with the [`Modules`](https://nodejs.org/api/modules.html#modules_require_main)
-subsystem is assumed.
+Effort should be made to use `import` and `require` in the appropriate circumstances to assist in the reduction of unneeded code.  For NodeJS, familiarity with the [`Modules`](https://nodejs.org/api/modules.html#modules_require_main) subsystem is assumed.
 
 ***`import` / `export`***
   * was introduced in ES6 and in many cases must be transpiled, reducing it to a `require` statement in such instances.

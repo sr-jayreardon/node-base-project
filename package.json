@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DealersLinkDevTeam/node-base-project.git"
+    "url": "git+https://github.com/sr-jayreardon/node-base-project.git"
   },
   "keywords": [
     "nodejs",
@@ -38,9 +38,9 @@
   ],
   "author": "Jay Reardon <jay.reardon@dealerslink.com>",
   "bugs": {
-    "url": "https://github.com/DealersLinkDevTeam/node-base-project/issues"
+    "url": "https://github.com/sr-jayreardon/node-base-project/issues"
   },
-  "homepage": "https://github.com/DealersLinkDevTeam/node-base-project#readme",
+  "homepage": "https://github.com/sr-jayreardon/node-base-project#readme",
   "devDependencies": {
     "ajv": "^6.10.2",
     "ast-types": "^0.13.2",

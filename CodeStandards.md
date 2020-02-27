@@ -29,7 +29,7 @@ In general, this code style guide exists to ensure the following:
   * Enforcement of coding best practices for code structure and performance
   * Ease of acquiring and on-boarding new talent
 
-The ES6 Style Guide and AirBnB Style Guides are used to ensure that code conforms to the leading industry standards which are used by the majority of Node developers within the Software industry.  These style and structure guidelines are supported through the automated tooling of ESLint which has the ability to correct many of the issues outlined in this guide.  Please see the [ESLint Rules](https://github.com/sr-jayreardon/node-base-project/wiki/ESLint-Rules)
+Portions of the ES6 Style, Standard.js and AirBnB Style Guides are used to ensure that code conforms to the leading industry standards which are used by the majority of Node developers while preferring for performant code. These style and structure guidelines are supported through the automated tooling of ESLint which has the ability to correct many of the issues outlined in this guide.  Please see the [ESLint Rules](https://github.com/sr-jayreardon/node-base-project/wiki/ESLint-Rules)
 for additional details.
 
 Consideration should be given for [language support](https://node.green/) for any environment that the code will run (e.g. NodeJS, Browsers, etc.). For information on setting up your environment to run the appropriate version of NodeJS please see the [NodeJS Standards Guide](https://github.com/sr-jayreardon/node-base-project/wiki/NodeJS-Standards)

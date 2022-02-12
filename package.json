@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/sr-jayreardon/node-base-project#readme",
   "devDependencies": {
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "ast-types": "^0.13.2",
     "chai": "^4.2.0",
     "codacy-coverage": "^3.4.0",
